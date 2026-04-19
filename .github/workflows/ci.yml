@@ -17,4 +17,4 @@ jobs:
       - run: pytest -q
       - run: alembic upgrade head
         env:
-          AUTOKALSHI_DB_URL: "sqlite+aiosqlite:///ci.db"
+          AUTOKALSHI_DB_URL: "sqlite:///ci.db"
